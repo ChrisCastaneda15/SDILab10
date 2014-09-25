@@ -50,12 +50,15 @@
           numArray.splice(pballArray[i]);   
         };
         
+        //POWERBALL NUM
+        pballArray[5] = Math.floor(Math.random() * 34) + 1;
      
+        
     }; 
     
 // MAIN
 
     console.log("The multiples of 3 and 5 of all whole numbers under 1000 is " + threeNfive() + ".");
        
-  
+   
 
