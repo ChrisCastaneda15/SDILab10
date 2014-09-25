@@ -32,10 +32,30 @@
         
     };
     
+// Problem two - Powerball Generator
 
+    var powerBall = function()
+    {
+        var pballArray = [];
+        var numArray = [];  
+        	for(i = 1; i < 60; i++)
+            {
+                numArray[i] = i;  
+            };           
+
+        // 5 NUMS
+        for(i = 0; i < 5; i++)
+        {
+          pballArray[i] = Math.floor(Math.random() * 58) + 1;
+          numArray.splice(pballArray[i]);   
+        };
+        
+     
+    }; 
+    
 // MAIN
 
     console.log("The multiples of 3 and 5 of all whole numbers under 1000 is " + threeNfive() + ".");
        
-
+  
 
