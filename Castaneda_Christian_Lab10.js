@@ -53,12 +53,14 @@
         //POWERBALL NUM
         pballArray[5] = Math.floor(Math.random() * 34) + 1;
      
-        
+        return pballArray;  
     }; 
     
 // MAIN
 
     console.log("The multiples of 3 and 5 of all whole numbers under 1000 is " + threeNfive() + ".");
        
-   
+    pballNums = powerBall();
+    console.log("Today's lottery numbers are " + pballNums[0] + ", " + pballNums[1] + ", " + pballNums[2] + ", " + pballNums[3] + ", and " + pballNums[4] + "!");
+    console.log("And today's powerball number is " + pballNums[5] + "!");
 
