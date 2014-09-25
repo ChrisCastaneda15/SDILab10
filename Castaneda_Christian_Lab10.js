@@ -6,7 +6,8 @@
  */
 
 // Variables
-    
+    var pballNums;
+  
 // Problem one - Multiples of 3 and 5
     
     var threeNfive = function()
@@ -26,4 +27,15 @@
             fiveSum = fiveSum + (5 * x);                
         };
           
+        //ADD and RETURN the sums
+        return threeSum + fiveSum;
+        
+    };
+    
+
+// MAIN
+
+    console.log("The multiples of 3 and 5 of all whole numbers under 1000 is " + threeNfive() + ".");
+       
+
 
